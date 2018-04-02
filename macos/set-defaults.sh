@@ -84,15 +84,6 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 echo "  › Disable the 'Are you sure you want to open this application?' dialog"
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-echo "  › Set dark interface style"
-defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
-
-echo "  › Set graphite appearance"
-defaults write NSGlobalDomain AppleAquaColorVariant -int 6
-
-echo "  › Set graphite highlight color"
-defaults write NSGlobalDomain AppleHighlightColor -string "0.847059 0.847059 0.862745"
-
 echo "  › Show battery percent"
 defaults write com.apple.menuextra.battery ShowPercent -bool true
 
@@ -152,16 +143,6 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 echo ""
 echo "› Browsers:"
-echo "  › Hide Safari's bookmark bar"
-defaults write com.apple.Safari ShowFavoritesBar -bool false
-
-echo "  › Set up Safari for development"
-defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
-defaults write com.apple.Safari IncludeDevelopMenu -bool true
-defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
-defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
-defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
-
 echo "  › Disable the annoying backswipe in Chrome"
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 
@@ -175,18 +156,6 @@ defaults write com.apple.dock tilesize -int 36
 echo "  › Speeding up Mission Control animations and grouping windows by application"
 defaults write com.apple.dock expose-animation-duration -float 0.1
 defaults write com.apple.dock "expose-group-by-app" -bool true
-
-echo "  › Remove the auto-hiding Dock delay"
-defaults write com.apple.dock autohide-delay -float 0
-echo "  › Remove the animation when hiding/showing the Dock"
-defaults write com.apple.dock autohide-time-modifier -float 0
-
-echo "  › Automatically hide and show the Dock"
-defaults write com.apple.dock autohide -bool true
-
-echo "  › Don't animate opening applications from the Dock"
-defaults write com.apple.dock launchanim -bool false
-
 #############################
 
 echo ""
@@ -221,37 +190,6 @@ defaults write org.m0k.transmission EncryptionRequire -bool true
 defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 defaults write org.m0k.transmission BlocklistNew -bool true
 defaults write org.m0k.transmission BlocklistURL -string "http://john.bitsurge.net/public/biglist.p2p.gz"
-
-#############################
-
-echo ""
-echo "› Mail:"
-echo "  › Add the keyboard shortcut CMD + Enter to send an email"
-defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\U21a9"
-echo "  › Add the keyboard shortcut CMD + Shift + E to archive an email"
-# shellcheck disable=SC2016
-defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Archive" '@$e'
-
-echo "  › Disable smart quotes as it's annoying for messages that contain code"
-defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticQuoteSubstitutionEnabled" -bool false
-
-echo "  › Set email addresses to copy as 'foo@example.com' instead of 'Foo Bar <foo@example.com>'"
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
-
-echo "  › Display emails in threaded mode, sorted by date (oldest at the top)"
-defaults write com.apple.mail DraftsViewerAttributes -dict-add "DisplayInThreadedMode" -string "yes"
-defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortedDescending" -string "yes"
-defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortOrder" -string "received-date"
-
-echo "  › Disable inline attachments (just show the icons)"
-defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
-
-echo "  › Disable automatic spell checking"
-defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnabled"
-
-echo "  ›  Disable send and reply animations in Mail.app"
-defaults write com.apple.mail DisableReplyAnimations -bool true
-defaults write com.apple.mail DisableSendAnimations -bool true
 
 #############################
 
@@ -299,31 +237,6 @@ disable_agent ~/Applications/Spotify.app/Contents/MacOS/SpotifyWebHelper
 echo "  › Prevent Android-File-Transfer to open when a device connects"
 disable_agent "/Applications/Android File Transfer.app/Contents/Resources/Android File Transfer Agent.app"
 disable_agent "$HOME/Library/Application Support/Google/Android File Transfer/Android File Transfer Agent.app"
-
-#############################
-
-echo ""
-echo "› Twitter.app:"
-echo "  › Disable smart quotes as it’s annoying for code tweets"
-defaults write com.twitter.twitter-mac AutomaticQuoteSubstitutionEnabled -bool false
-
-echo "  › Show the app window when clicking the menu bar icon"
-defaults write com.twitter.twitter-mac MenuItemBehavior -int 1
-
-echo "  › Enable the hidden ‘Develop’ menu"
-defaults write com.twitter.twitter-mac ShowDevelopMenu -bool true
-
-echo "  › Open links in the background"
-defaults write com.twitter.twitter-mac openLinksInBackground -bool true
-
-echo "  › Allow closing the new tweet window by pressing Esc"
-defaults write com.twitter.twitter-mac ESCClosesComposeWindow -bool true
-
-echo "  › Show full names rather than Twitter handles"
-defaults write com.twitter.twitter-mac ShowFullNames -bool true
-
-echo "  › Hide the app in the background if it’s not the front-most window"
-defaults write com.twitter.twitter-mac HideInBackground -bool true
 
 #############################
 
