@@ -12,31 +12,15 @@ if test "$(which code)"; then
 
 	# from `code --list-extensions`
 	modules="
-Borke.puppet
-CoenraadS.bracket-pair-colorizer
-EditorConfig.EditorConfig
+PKief.material-icon-theme
+akamud.vscode-theme-onedark
+eamodio.gitlens
 HookyQR.beautify
 PeterJausovec.vscode-docker
-be5invis.toml
-caarlos0.language-prometheus
-carolynvs.dep
-esbenp.prettier-vscode
-formulahendry.auto-close-tag
-formulahendry.auto-rename-tag
 foxundermoon.shell-format
-haaaad.ansible
 ipedrazas.kubernetes-snippets
-lukehoban.Go
 mauve.terraform
-ms-python.python
-octref.vetur
-patbenatar.advanced-new-file
-pnp.polacode
-rebornix.Ruby
-rust-lang.rust
-sbrink.elm
 shanoor.vscode-nginx
-shinnn.alex
 teabyii.ayu
 timonwong.shellcheck
 "

@@ -14,6 +14,7 @@ kx() {
 alias k='kubectl'
 alias sk='kubectl -n kube-system'
 alias ke='EDITOR=vim kubectl edit'
+alias gpods='kubectl get pods'
 
 alias kdebug='kubectl run -i -t debug --rm --image=caarlos0/debug --restart=Never'
 alias kfails='kubectl get po -owide --all-namespaces | grep "0/" | tee /dev/tty | wc -l'
