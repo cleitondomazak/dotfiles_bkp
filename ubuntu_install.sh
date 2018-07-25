@@ -18,7 +18,7 @@ rm chrome.deb
 sudo apt-get install -fy
 
 # programming fonts
-#curl -L https://github.com/hbin/top-programming-fonts/raw/master/install.sh | bash
+curl -L https://github.com/hbin/top-programming-fonts/raw/master/install.sh | bash
 
 # vscode
 sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
@@ -31,16 +31,6 @@ wget -O dropbox.deb "https://www.dropbox.com/download?dl=packages/ubuntu/dropbox
 sudo dpkg --force-depends -i dropbox.deb
 rm dropbox.deb
 sudo apt-get install -fy
-
-# postgres
-#sudo apt-get update
-#sudo apt-get install -y postgresql postgresql-contrib pgadmin3 pg-activity
-#echo -e "local   all             all                                     trust
-#host    all             all             127.0.0.1/32            trust
-#host    all             all             127.17.0.0/16           trust
-#host    all             all             10.0.0.0/8              trust" | sudo tee /etc/postgresql/9.*/main/pg_hba.conf
-#echo "listen_addresses = ''" | sudo tee -a /etc/postgresql/9./main/postgresql.conf
-#sudo service postgresql restart
 
 # spotify
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45CE24F27EEEB1450EFDC8610341D9410
