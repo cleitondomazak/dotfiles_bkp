@@ -11,6 +11,14 @@ sudo apt-get install -y ubuntu-restricted-extras zsh terminator curl xsel \
   gnome-tweak-tool vim-nox smbclient htop openssh-server s3cmd openvpn \
   network-manager-openvpn git python-pip
 
+# Docker
+sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+sudo apt update
+sudo apt install docker-ce
+sg docker newgrp $(id -gn)
+
 # chrome
 wget -O chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --force-depends -i chrome.deb

@@ -1,5 +1,7 @@
 #!/bin/sh
 mkdir -p "$HOME/.docker/completions"
+# No sudo need
+sg docker newgrp $(id -gn)
 
 if which docker-compose >/dev/null 2>&1; then
 	curl -sL https://raw.githubusercontent.com/docker/compose/master/contrib/completion/zsh/_docker-compose \
