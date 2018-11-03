@@ -23,6 +23,7 @@ mauve.terraform
 shanoor.vscode-nginx
 teabyii.ayu
 timonwong.shellcheck
+monokai.theme-monokai-pro-vscode
 "
 	for module in $modules; do
 		code --install-extension "$module" || true

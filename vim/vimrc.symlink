@@ -220,9 +220,11 @@ if has('gui_running')
   set regexpengine=1
   syntax enable
 endif
-set termguicolors
+if exists('+termguicolors')
+  set termguicolors
+endif
 let ayucolor="mirage"
-colorscheme ayu
+:silent! colorscheme ayu
 "set background=dark
 " let g:hybrid_use_Xresources = 1
 " let g:rehash256 = 1
@@ -457,6 +459,7 @@ nnoremap <leader>gp :Gpush<CR>
 vnoremap <leader>gb :Gblame<CR>
 
 " ==================== Vim-go ====================
+let g:go_version_warning = 0
 let g:go_fmt_fail_silently = 0
 let g:go_fmt_command = "goimports"
 let g:go_autodetect_gopath = 1
@@ -533,9 +536,9 @@ if has('nvim')
 
 
   " Use partial fuzzy matches like YouCompleteMe
-  call deoplete#custom#set('_', 'matchers', ['matcher_fuzzy'])
-  call deoplete#custom#set('_', 'converters', ['converter_remove_paren'])
-  call deoplete#custom#set('_', 'disabled_syntaxes', ['Comment', 'String'])
+  call deoplete#custom#source('_', 'matchers', ['matcher_fuzzy'])
+  call deoplete#custom#source('_', 'converters', ['converter_remove_paren'])
+  call deoplete#custom#source('_', 'disabled_syntaxes', ['Comment', 'String'])
 endif
 
 " ==================== vim-multiple-cursors ====================
