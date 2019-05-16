@@ -12,18 +12,41 @@ if test "$(which code)"; then
 
 	# from `code --list-extensions`
 	modules="
-PKief.material-icon-theme
 akamud.vscode-theme-onedark
-eamodio.gitlens
-HookyQR.beautify
-PeterJausovec.vscode-docker
+azemoh.one-monokai
+DavidAnson.vscode-markdownlint
 foxundermoon.shell-format
 ipedrazas.kubernetes-snippets
-mauve.terraform
-shanoor.vscode-nginx
-teabyii.ayu
-timonwong.shellcheck
+korekontrol.saltstack
+LawrenceGrant.cql
 monokai.theme-monokai-pro-vscode
+ms-mssql.mssql
+PKief.material-icon-theme
+samuelcolvin.jinjahtml
+sensourceinc.vscode-sql-beautify
+teabyii.ayu
+zhuangtongfa.Material-theme
+be5invis.toml
+budparr.language-hugo-vscode
+caarlos0.language-prometheus
+coolbear.systemd-unit-file
+eamodio.gitlens
+EditorConfig.EditorConfig
+fabiospampinato.vscode-monokai-night
+heptio.jsonnet
+HookyQR.beautify
+mauve.terraform
+monokai.theme-monokai-pro-vscode
+ms-python.python
+ms-vscode.Go
+patbenatar.advanced-new-file
+PeterJausovec.vscode-docker
+pnp.polacode
+rebornix.ruby
+rust-lang.rust
+shanoor.vscode-nginx
+timonwong.shellcheck
+wmaurer.change-case
 "
 	for module in $modules; do
 		code --install-extension "$module" || true

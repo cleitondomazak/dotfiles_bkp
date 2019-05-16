@@ -31,7 +31,7 @@
     "/vendor": true
   },
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.fontAliasing": "antialiased",
+  "workbench.fontAliasing": "auto",
   "editor.fontWeight": "300",
   "docker.showExplorer": false,
   "workbench.editor.showIcons": true,
