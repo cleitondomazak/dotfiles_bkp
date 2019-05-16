@@ -1,15 +1,17 @@
 #!/bin/sh
-URL="http://www.marksimonson.com/assets/content/fonts/AnonymousPro-1.002.zip"
+URL="https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.0/FiraCode.zip"
 
 install() {
-	curl -L -s -o /tmp/anon.zip "$URL"
-	unzip /tmp/anon.zip -d /tmp
-	cp /tmp/AnonymousPro-1.002.001/*.ttf "$2"
+	curl -L -s -o /tmp/fura.zip "$URL"
+	unzip /tmp/fura.zip -d /tmp/FiraCode
+	cp /tmp/FiraCode/*.ttf "$1"
 }
 
 if [ "$(uname -s)" = "Darwin" ]; then
-	if which brew >/dev/null 2>&1; then
-		brew cask install font-anonymous-pro
+	if command -v brew >/dev/null 2>&1; then
+		brew tap homebrew/cask-fonts
+		brew cask install font-firacode-nerd-font
+		brew cask install font-firacode-nerd-font-mono
 	else
 		install ~/Library/Fonts
 	fi
