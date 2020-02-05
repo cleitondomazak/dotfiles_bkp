@@ -1,10 +1,6 @@
-# Doma' dotfiles
+# doma' dotfiles
 
 > Config files for ZSH, Git, Editors, Terminals and more.
-
-![screenshot][scrn]
-
-[scrn]: /docs/screenshot.png
 
 ## Installation
 
@@ -23,7 +19,7 @@ First, make sure you have all those things installed:
 Then, run these steps:
 
 ```console
-$ git clone https://github.com/cleitondomazak/dotfiles.git ~/.dotfiles
+$ git clone https://github.com/caarlos0/dotfiles.git ~/.dotfiles
 $ cd ~/.dotfiles
 $ ./script/bootstrap
 $ zsh # or just close and open your terminal again.
@@ -37,9 +33,14 @@ For macOS, I recommend:
 
 - iTerm: a better terminal emulator;
 
-For Linux:
+For both Linux and macOS:
 
-- Terminator: a better terminal emulator;
+- [`diff-so-fancy`](https://github.com/so-fancy/diff-so-fancy):
+better git difs (you'll need to run `dot_update` to apply it);
+- [`fzf`](https://github.com/junegunn/fzf):
+fuzzy finder, used in `,t` on vim, for example;
+- [`kubectx`](https://github.com/ahmetb/kubectx) for better kubernetes context
+  and namespace switch;
 
 ### macOS defaults
 
@@ -49,7 +50,12 @@ You use it by running:
 $DOTFILES/macos/set-defaults.sh
 ```
 
-And logging out and in again.
+And logging out and in again/restart.
+
+### Themes and fonts being used
+
+Theme is **[Dracula](https://draculatheme.com)** and the font is
+**Source Code Pro Light**.
 
 ## Further help:
 
