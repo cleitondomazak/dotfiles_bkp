@@ -755,10 +755,36 @@
 			</dict>
 			<key>Guid</key>
 			<string>21048CBB-8F4B-4492-A49A-8DCDADDF9248</string>
+			<key>Has Hotkey</key>
+			<true/>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
+			<key>HotKey Activated By Modifier</key>
+			<false/>
+			<key>HotKey Alternate Shortcuts</key>
+			<array/>
+			<key>HotKey Characters</key>
+			<string>†</string>
+			<key>HotKey Characters Ignoring Modifiers</key>
+			<string>t</string>
+			<key>HotKey Key Code</key>
+			<integer>17</integer>
+			<key>HotKey Modifier Activation</key>
+			<integer>0</integer>
+			<key>HotKey Modifier Flags</key>
+			<integer>1572864</integer>
+			<key>HotKey Window Animates</key>
+			<true/>
+			<key>HotKey Window AutoHides</key>
+			<true/>
+			<key>HotKey Window Dock Click Action</key>
+			<integer>0</integer>
+			<key>HotKey Window Floats</key>
+			<true/>
+			<key>HotKey Window Reopens On Activation</key>
+			<false/>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -1235,6 +1261,8 @@
 					<string>\btelnet:([a-z0-9A-Z_]+@)?([a-zA-Z0-9\-]+\.)*[a-zA-Z0-9\-]+\b</string>
 				</dict>
 			</array>
+			<key>Space</key>
+			<integer>0</integer>
 			<key>Status Bar Layout</key>
 			<dict>
 				<key>advanced configuration</key>
@@ -1380,9 +1408,9 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>Working Directory</key>
-			<string>/Users/cleitondomazak</string>
+			<string>/Users/carlosabecker</string>
 		</dict>
 	</array>
 	<key>NoSyncAllAppVersions</key>
@@ -1414,12 +1442,14 @@
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
+	<key>NoSyncHaveUsedCopyMode</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>CC957211-E972-4CEB-B751-DBC2D6D8C924</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>85</integer>
+	<integer>91</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
