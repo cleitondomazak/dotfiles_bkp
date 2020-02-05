@@ -756,7 +756,7 @@
 			<key>Guid</key>
 			<string>21048CBB-8F4B-4492-A49A-8DCDADDF9248</string>
 			<key>Has Hotkey</key>
-			<true/>
+			<false/>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
@@ -1408,7 +1408,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>1</integer>
+			<integer>15</integer>
 			<key>Working Directory</key>
 			<string>/Users/carlosabecker</string>
 		</dict>
@@ -1449,7 +1449,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>CC957211-E972-4CEB-B751-DBC2D6D8C924</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>91</integer>
+	<integer>94</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
