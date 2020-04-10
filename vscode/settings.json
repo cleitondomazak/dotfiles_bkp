@@ -5,7 +5,9 @@
     80,
     120
   ],
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
   "editor.trimAutoWhitespace": true,
   "editor.tabCompletion": "on",
   "explorer.openEditors.visible": 0,
@@ -42,18 +44,12 @@
   "breadcrumbs.enabled": true,
   "telemetry.enableTelemetry": false,
   "terraform.telemetry.enabled": false,
-  "terraform.indexing.enabled": false,
-  "terraform.languageServer.enabled": true,
   "telemetry.enableCrashReporter": false,
   "go.useCodeSnippetsOnFunctionSuggest": true,
   "go.formatTool": "goimports",
   "search.useGlobalIgnoreFiles": true,
   "workbench.editor.highlightModifiedTabs": true,
   "search.showLineNumbers": true,
-  "ruby.intellisense": "rubyLocate",
-  "ruby.format": "rubocop",
-  "ruby.codeCompletion": "rcodetools",
-  "ruby.useLanguageServer": true,
   "go.autocompleteUnimportedPackages": true,
   "editor.fontWeight": "600",
   "terminal.integrated.cursorBlinking": true,
@@ -77,5 +73,8 @@
   ],
   "editor.fontFamily": "Hack, 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
   "editor.smoothScrolling": true,
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  }
 }
